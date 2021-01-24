@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .contenedor{
+    width: 400px;
+    margin:0 auto;
+  }
+  
+  .cabecera{
+    margin: 0 auto;
+    border: 1px solid  rgba(189, 186, 186, 0.582);;
+    padding: 20px;
+    margin-top: 15px;
+    background: rgba(189, 186, 186, 0.582);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+  }
+  
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .textos{
+    display: flex;
+    justify-content: center;
+  }
+  #txtTexto{
+    padding: 10px;
+    border:1px solid rgba(189, 186, 186, 0.952);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: none;
+    width: 300px;
+  }
+  
+  #btnAgre{
+    padding: 10px;
+    background: skyblue;
+    color: white;
+    border: none;
+    border-radius:0px 5px 5px 0px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .opciones{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  
+  a{
+    color: rgb(57, 86, 250);
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  ul>li{
+    list-style: none;
+   
+  }
+  
+  .tarjetaTareas {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(189, 186, 186, 0.952);;
+  }
+  
+  ul#tareas {
+    border: 1px solid rgba(189, 186, 186, 0.952);
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .checked {
+           
+      color:red;
+      text-decoration: line-through;
+    }
+    /* Add a "checked" mark when clicked on */
+    .checked::before {
+      content: '';
+      position: absolute;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
+  
